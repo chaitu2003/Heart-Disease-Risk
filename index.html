@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/heart_disease_risk.css">
+    <script src="assets/js/heart_disease_risk.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <div>
+            <h2 class="h">Heart Disease Risk Prediction</h2>
+        </div>
+        <div>
+            <label>Age:</label>
+            <div>
+                <input type="text" id="age" placeholder="Enter your age" required>
+            </div>
+        </div>
+        <div>
+            <label>Select your Gender</label>
+            <div class="gender">
+                <div>
+                    <input type="radio" id="male" value="male" name="gender" class="form-check-input"> 
+                    <label for="male" class="form-check-label">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" value="female" name="gender" class="form-check-input">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Cholesterol levels:</label>
+            <div>
+                <input type="text" placeholder="Enter your cholesterol levels" id="cholesterol" required>
+            </div>
+        </div>
+        <div>
+            <label>Are you a smoker?</label>
+            <div class="smoke">
+                <div class="">                    
+                    <input type="radio" name="smoke" id="non-smoker" value="non-smoker" class="form-check-input"> 
+                    <label for="non-smoker" class="form-check-label" >Non-Smoker</label>
+                </div>
+                <div>
+                    <input type="radio" name="smoke" id="smoker" value="smoker" class="form-check-input"> 
+                    <label for="smoker" class="form-check-label" >Smoker</label>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary btn btn-sm" type="submit" onclick="cal()">Submit</button>
+        </div>
+        <div class="result">
+            <p id="result">Result:</p>
+        </div>
+    </div>
+</body>
+</html>

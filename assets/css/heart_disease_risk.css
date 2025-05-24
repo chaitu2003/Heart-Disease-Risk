@@ -1,0 +1,52 @@
+div {
+    padding: 10px;
+}
+
+body {
+    justify-items: center;
+}
+
+.container1 {
+    padding: 13px;
+    background-color: #000000;
+    margin-top: 10px;
+    /* justify-items: center; */
+    border-radius: 15px;
+    max-width: 420px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 9px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.05);
+}
+
+.h {
+    color: white;
+    text-wrap: balance;
+    font-size: x-large;
+}
+
+label , #result {
+    color: white;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+#result {
+    text-wrap: pretty;
+}
+
+.smoke , .gender {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
