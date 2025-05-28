@@ -1,8 +1,16 @@
-function cal(){
+function cal(event){
+
+    event.preventDefault()
+
             var age = parseInt(document.getElementById('age').value);
             var gender = document.querySelector('input[name="gender"]:checked').getAttribute('value');
             var cholesterol = parseInt(document.getElementById('cholesterol').value);
             var smoke = document.querySelector('input[name="smoke"]:checked').getAttribute('value');
+
+            if(isNaN(age) || isNaN(cholesterol) || age<=0 || cholesterol<0 ){
+                alert("Enter valid values");
+                return;
+            }
 
             console.log(age,gender,cholesterol,smoke);
 
@@ -33,7 +41,7 @@ function cal(){
                 risk_factor = "Moderate Risk";
                 advice = "You may be at some risk. It's a good time to improve your lifestyle – eat heart-friendly foods, exercise regularly, and consult a doctor for a check-up.";
             } 
-            else {
+            else if(final_score >= 6) {
                 risk_factor = "High Risk";
                 advice = "You are at high risk of heart disease. Please consult a healthcare professional immediately. Changes in diet, physical activity, and possibly medication may be required.";
             } 
